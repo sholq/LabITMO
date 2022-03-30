@@ -18,8 +18,8 @@
   /* Позиционирование */
   margin: 0 auto;
   /* Параметры текста */
-  font-family: 'Open Sans', Arial, sans-serif;
-  color: #FFFFFF;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #ffffff;
   /* Фон */
   background: #001337;
   /* Параметры оптимизации шрифта */
@@ -585,4 +585,28 @@
   list-style: none;
 }
 
+.header {
+  min-height: 44px;
+  background-color: #000d26;
+  display: flex;
+  align-items: center;
+}
 
+.header__logo {
+  width: 71px;
+  height: 24px;
+  margin-left: 77px;
+}
+
+.header__burger-button {
+  background-image: url(../image/Header/BurgerMenu.svg);
+  background-color: #000d26;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 8px;
+}
