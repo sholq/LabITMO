@@ -15,3 +15,9 @@
 Лендинг ориентирован на будущих студентов и его основная задача — привлечь новых студентов в магистратуру / аспирантуру.
 
 Лаборатория входит в состав Национального центра когнитивных разработок и специализируется на выполнении разных промышленных задач на основе больших данных.
+
+**Полезные ссылки для команды**
+* [Соглашение о коммитах](https://www.conventionalcommits.org/ru/v1.0.0/)
+* [Идеальный коммит](https://practicum.yandex.ru/learn/web/courses/35d951a1-b62c-4a96-96ac-a8118657fad0/sprints/14142/topics/69f49b9d-7d5c-41f4-8938-e81fee61e549/lessons/4fcc091e-e8f2-4a6e-8cad-de34038b438b/)
+* [Figma](https://www.figma.com/file/vjt3woFqBHi5jGpFi4ds5C/PAGE-SG_ITMO?node-id=1277%3A6357)
+* [GitHub](https://github.com/sholq/LabITMO/tree/develop)
