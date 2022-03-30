@@ -1,2 +1,23 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/open-sans/open-sans.css);
+
+/* Начинаем с мобильной версии */
+
+.page {
+  max-width: 320px;
+  min-height: 100vh;
+  /* Позиционирование */
+  margin: 0 auto;
+  /* Параметры текста */
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #FFFFFF;
+  /* Фон */
+  background: #001337;
+  /* Параметры оптимизации шрифта */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
