@@ -19,7 +19,7 @@
   margin: 0 auto;
   /* Параметры текста */
   font-family: 'Open Sans', Arial, sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   /* Фон */
   background: #001337;
   /* Параметры оптимизации шрифта */
@@ -29,4 +29,59 @@
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #e0f0ff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  max-width: calc(100% - 32px);
+  margin: 0 auto;
+  position: relative;
+  padding: 16px;
+}
+
+.card__pin {
+  position: absolute;
+  right: -6px;
+  top: -12px;
+  border: none;
+  padding: 0;
+  height: 31px;
+  width: 24px;
+}
+
+.card__paragraph {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #009fac;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 8px;
+}
+
+.card__title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #001337;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #009fac;
+}
+
+.card__description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000d26;
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
 }
