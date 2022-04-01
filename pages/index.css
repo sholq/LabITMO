@@ -30,3 +30,103 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
 }
+
+.menu {
+  max-width: 320px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000D26;
+}
+
+.menu__header {
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  background-image: url(../image/Logo.svg);
+}
+
+.logo_place_navigation {
+  width: 71px;
+  height: 24px;
+  margin-left: 16px;
+}
+
+.closeButton {
+  width: 24px;
+  height: 24px;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.closeButton_menu {
+  background-image: url(../image/closeButtonWhite.svg);
+  margin-right: 16px;
+}
+
+.menu__list {
+  width: 100%;
+  list-style-type: none;
+  padding: 16px 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu__list-item {
+  width: 100%;
+  height: 44px;
+  text-decoration: none;
+}
+
+.menu__text {
+  display: flex;
+  padding-left: 16px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px; 
+}
+
+.menu__list-item:active {
+  background-color: #001337;
+}
+
+.menu__list_type_education {
+  display: none;
+  padding: 0;
+}
+
+.menu__list-item_label {
+  cursor: pointer;
+}
+
+.menu__checkbox {
+  display: none;
+}
+
+.menu__checkbox:checked ~ .menu__list_type_education {
+  display: flex;
+}
+
+.menu__checkbox:checked ~ .menu__list_type_education .menu__text {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+.menu__checkbox:checked + .menu__list-item .menu__text {
+  font-weight: 600;
+}
+
+.menu__list-item_inactive{
+  opacity: 0.5;
+}
