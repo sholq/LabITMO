@@ -41,9 +41,9 @@
   justify-content: center;
   align-items: center;
   z-index: 3;
-  /*visibility: hidden;
+  visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear, .5s;*/
+  transition: visibility 0s, opacity 0.5s linear, .5s;
 }
 
 .popup__container {
@@ -89,9 +89,6 @@
 .popup__image {
   width: 268px;
   height: 160px;
-  background-image: url(../image/forPopup.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   border-radius: 10px;
   margin-bottom: 10px;
 }
