@@ -301,3 +301,77 @@
 .popup__list {
   padding-left: 18px;
 }
+
+.ol {
+  outline: 1px solid red;
+}
+
+.laboratory {
+  padding: 40px 16px;
+  background-color: #E0F0FF;
+}
+
+.laboratory__header {
+  margin: 0;
+  color: #000D26;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+}
+
+.laboratory__figure {
+  width: 288px;
+  height: 180px;
+  margin: 20px 0;
+  background-image: url('../image/Lab/image\ 35.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.laboratory__caption{
+  margin: 0 0 20px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000D26;
+}
+
+.laboratory__plates{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.laboratory__plate {
+  width: 140px;
+  min-height: 224px;
+}
+
+.laboratory__header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.0588372px;
+  color: #001337;
+  margin: 10px 10px 0 10px;
+}
+
+.laboratory__logo-container {
+  width: 40px;
+  height: 40px;
+  margin: 16px auto;
+  border-radius: 50%;
+}
+
+.laboratory__logo {
+  width: 20px;
+  height: 20px;
+  margin: 10.29px;
+}
