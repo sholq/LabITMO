@@ -85,12 +85,13 @@
   display: flex;
   height: 100%;
   padding-left: 16px;
+  box-sizing: border-box;
   text-decoration: none;
   align-items: center;
   color: #FFFFFF;
   font-weight: 400;
   font-size: 14px;
-  line-height: 19px; 
+  line-height: 19px;
 }
 
 .menu__list-item:active {
@@ -102,8 +103,18 @@
   padding: 0;
 }
 
+.menu__list-item_type_sublist {
+  height: max-content;
+}
+
+.menu__list-item_type_sublist:active {
+  background-color: #000D26;
+}
+
 .menu__text_type_label {
   cursor: pointer;
+  height: 44px;
+  width: 100%;
 }
 
 .menu__checkbox {
@@ -120,7 +131,7 @@
   letter-spacing: 0.1px;
 }
 
-.menu__checkbox:checked + .menu__list-item .menu__text {
+.menu__checkbox:checked ~ .menu__text_type_label {
   font-weight: 600;
 }
 
