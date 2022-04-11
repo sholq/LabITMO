@@ -9,11 +9,50 @@
 <body>
   <div class="page">
     <header class="header">
-      <nav class="menu menu_style_popup"></nav>
+      <nav class="menu menu_style_popup">
+        <div class="logo logo_place_navigation"></div>
+        <ul class="menu__list">
+          <li class="menu__list-item"><a href="#" class="menu__text">О нас</a></li>
+          <li class="menu__list-item"><a href="#" class="menu__text">Лаборатория</a></li>
+          <li class="menu__list-item"><a href="#" class="menu__text">Проекты</a></li>
+          <li class="menu__list-item menu__list-item_type_sublist">
+            <input class="menu__checkbox" id="tab-education" type="checkbox">
+            <label for="tab-education" class="menu__text menu__text_type_label">
+              Образование
+            </label>
+            <ul class="menu__list menu__list_type_education">
+              <li class="menu__list-item menu__list-item_type_education"><a href="#" class="menu__text">Магистратура</a></li>
+              <li class="menu__list-item menu__list-item_type_education"><a href="#" class="menu__text">Аспирантура</a></li>
+            </ul>
+          </li>
+          <li class="menu__list-item"><a href="#" class="menu__text">Публикации</a></li>
+          <li class="menu__list-item"><a href="#" class="menu__text">Команда</a></li>
+          <li class="menu__list-item"><a href="#" class="menu__text">Связаться</a></li>
+        </ul>
+        <button class="closeButton closeButton_menu" type="button" aria-label="Закрыть попап"></button>
+      </nav>
     </header>
 
     <main class="main">
-      <section class="description"></section>
+      <section class="description">
+        <h2 class="description__title">несколько слов о нас</h2>
+        <p class="description__text">Национальный центр когнитивных разработок – центр национальной технологической инициативы (НТИ),
+          получивший государственную поддержку по направлению «Технологии машинного обучения
+          и когнитивные технологии».</p>
+          <ul class="cards">
+            <li>
+              <article class="card">
+                <div class="card__pin"></div>
+                <p class="card__paragraph">Понедельник, 5 июля 2021г</p>
+                <h3 class="card__title">авторы робота-музыканта роберта роботецкого признаны лучшими новичком</h3>
+                <p class="card__description">
+                  Команда ИТМО стала лучшей на международном финале RoboCup-2021. Успех ребятам принес Роберт Роботецкий робот-виртуоз,
+                  исполнивший знаменитый французский романс Под небом Парижа. В подготовке команды участвовали сотрудники лаборатории.
+                </p>
+              </article>
+            </li>
+          </ul>
+      </section>
 
       <section class="laboratory"></section>
 
@@ -36,53 +75,71 @@
         <p class="footer__copyright">Информация &#169;2020 Университет ИТМО</p>
       </div>
       <div class="footer__columns">
-      <nav class="footer__column footer__column_content_about">
-        <h3 class="footer__title">О центре</h3>
-        <ul class="footer__list">
-          <li><a class="footer__text" href="#" target="_blank">О нас</a></li>
-          <li><a class="footer__text" href="#" target="_blank">Главная</a></li>
-          <li><a class="footer__text" href="#" target="_blank">Команда</a></li>
-          <li><a class="footer__text" href="#" target="_blank">Лаборатория</a></li>
-          <li><a class="footer__text" href="#" target="_blank">Контакты</a></li>
-        </ul>
-      </nav>
-      <nav class="footer__column footer__column_content_development">
-        <h3 class="footer__title">Развитие</h3>
-        <ul class="footer__list">
-          <li><a class="footer__text" href="#" target="_blank">Образование</a></li>
-          <li><a class="footer__text" href="#" target="_blank">Аспирантура</a></li>
-          <li><a class="footer__text" href="#" target="_blank">Магистратура</a></li>
-          <li><a class="footer__text" href="#" target="_blank">Публикации</a></li>
-          <li><a class="footer__text" href="#" target="_blank">Проекты</a></li>
-        </ul>
-      </nav>
-      <nav class="footer__column footer__column_content_contacts">
-        <h3 class="footer__title footer__title_contact">г.Санкт-Петербург</h3>
-        <ul class="footer__list footer__list_contact">
-          <li><p class="footer__text footer__text_contact">199034, Санкт-Петербург,<br />Биржевая линия, д. 4, лит. М, ауд. 302С</p></li>
-          <li><p class="footer__text footer__text_contact">+7 (812) 337-64-90<br />+7 (812) 337-64-94</p></li>
-          <li><p class="footer__text footer__text_contact">anna.lutsenko@itmo.ru</p></li>
-          <li>
-            <ul class="footer__links"> 
-              <li><a class="footer__link" href="#" target="_blank"><img class="footer__icon"
-              src="image/Icons/VK.svg" alt="VK"></a></li>
-              <li><a class="footer__link" href="#" target="_blank"><img class="footer__icon"
-              src="image/Icons/Facebook.svg" alt="Facebook"></a></li>
-              <li><a class="footer__link" href="#" target="_blank"><img class="footer__icon"
-              src="image/Icons/Telegram.svg" alt="Telegram"></a></li>
-              <li><a class="footer__link" href="#" target="_blank"><img class="footer__icon"
-              src="image/Icons/Insta.svg" alt="Instagram"></a></li>
-              <li><a class="footer__link" href="#" target="_blank"><img class="footer__icon"
-              src="image/Icons/YouTube.svg" alt="YouTube"></a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+        <nav class="footer__column footer__column_content_about">
+          <h3 class="footer__title">О центре</h3>
+          <ul class="footer__list">
+            <li><a class="footer__text" href="#" target="_blank">О нас</a></li>
+            <li><a class="footer__text" href="#" target="_blank">Главная</a></li>
+            <li><a class="footer__text" href="#" target="_blank">Команда</a></li>
+            <li><a class="footer__text" href="#" target="_blank">Лаборатория</a></li>
+            <li><a class="footer__text" href="#" target="_blank">Контакты</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__column footer__column_content_development">
+          <h3 class="footer__title">Развитие</h3>
+          <ul class="footer__list">
+            <li><a class="footer__text" href="#" target="_blank">Образование</a></li>
+            <li><a class="footer__text" href="#" target="_blank">Аспирантура</a></li>
+            <li><a class="footer__text" href="#" target="_blank">Магистратура</a></li>
+            <li><a class="footer__text" href="#" target="_blank">Публикации</a></li>
+            <li><a class="footer__text" href="#" target="_blank">Проекты</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__column footer__column_content_contacts">
+          <h3 class="footer__title footer__title_contact">г.Санкт-Петербург</h3>
+          <ul class="footer__list footer__list_contact">
+            <li><p class="footer__text footer__text_contact">199034, Санкт-Петербург,<br />Биржевая линия, д. 4, лит. М, ауд. 302С</p></li>
+            <li><p class="footer__text footer__text_contact">+7 (812) 337-64-90<br />+7 (812) 337-64-94</p></li>
+            <li><p class="footer__text footer__text_contact">anna.lutsenko@itmo.ru</p></li>
+            <li>
+              <ul class="footer__links"> 
+                <li><a class="footer__link" href="#" target="_blank"><img class="footer__icon"
+                src="image/Icons/VK.svg" alt="VK"></a></li>
+                <li><a class="footer__link" href="#" target="_blank"><img class="footer__icon"
+                src="image/Icons/Facebook.svg" alt="Facebook"></a></li>
+                <li><a class="footer__link" href="#" target="_blank"><img class="footer__icon"
+                src="image/Icons/Telegram.svg" alt="Telegram"></a></li>
+                <li><a class="footer__link" href="#" target="_blank"><img class="footer__icon"
+                src="image/Icons/Insta.svg" alt="Instagram"></a></li>
+                <li><a class="footer__link" href="#" target="_blank"><img class="footer__icon"
+                src="image/Icons/YouTube.svg" alt="YouTube"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </div>
       <p class="footer__author">Сделано студентами Яндекс. Практикума</p>
     </footer>
 
-    <div class="popup popup_type_laboratory"></div>
+    
+    <div class="popup popup_type_laboratory">
+      <div class="popup__container">
+        <article class="popup__aricle">
+          <h3 class="popup__title">Анализ социальных данных</h3>
+          <img class="popup__image" src="image/forPopup.jpg" alt="Команда программистов за работой">
+          <p class="poppup__text">В состав факультета входит ряд научных лабораторий и центров, в которых проводятся исследования:</p>
+          <ul class="poppup__text popup__list">
+            <li>безопасные киберфизические системы;</li>
+            <li>разработка средств защиты информации;</li>
+            <li>функциональная безопасность беспилотных транспортных средств;</li>
+            <li>теория информации и кодирования;</li>
+            <li>информационные процессы в Интернет и безопасность виртуального пространства;</li>
+            <li>интеллектуальные защищенные системы мультиагентного взаимодействия и пр.</li>
+          </ul>
+        </article>
+        <button class="closeButton closeButton_popup" type="button" aria-label="Закрыть попап"></button>
+      </div>
+    </div>
   </div>
 </body>
 </html>
