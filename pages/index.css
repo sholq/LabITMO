@@ -303,18 +303,15 @@
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.footer__cap {
-  min-width: 287px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  margin: 0 16px 40px 17px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 33px 1fr;
+  row-gap: 40px;
+  grid-template-areas:
+  "logo copyright"
+  "columns columns"
+  "author author";
+  padding: 40px 16px 33px 17px;
 }
 
 .logo {
@@ -323,13 +320,14 @@
 }
 
 .logo_place_footer {
+  grid-area: logo;
   width: 98px;
   height: 33px;
   background-size: contain;
 }
 
 .footer__copyright {
-  width: 140px;
+  grid-area: copyright;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -337,14 +335,14 @@
 }
 
 .footer__columns {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: 16px;
-}
-
-.footer__column {
-  margin-bottom: 38px;
+  grid-area: columns;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 126px 1fr;
+  row-gap: 40px;
+  grid-template-areas:
+  "about development"
+  "contacts contacts";
 }
 
 .footer__title {
@@ -371,11 +369,15 @@
 }
 
 .footer__column_content_about {
-  margin-right: 70px;
+  grid-area: about;
+}
+
+.footer__column_content_development {
+  grid-area: development;
 }
 
 .footer__column_content_contacts {
-  width: 286px;
+  grid-area: contacts;
 }
 
 .footer__list_contact {
@@ -408,8 +410,8 @@
 }
 
 .footer__author {
+  grid-area: author;
   margin: 0;
-  padding-bottom: 16px;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
