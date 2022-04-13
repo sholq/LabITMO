@@ -360,6 +360,7 @@
 }
 
 .footer__text {
+  display: block;
   text-decoration: none;
   color: #FFFFFF;
   font-weight: 400;
