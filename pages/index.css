@@ -302,6 +302,131 @@
   padding-left: 18px;
 }
 
+.laboratory {
+  padding: 40px 16px 32px 16px;
+  background-color: #E0F0FF;
+}
+
+.laboratory__header {
+  margin: 0;
+  color: #000D26;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+}
+
+.laboratory__img {
+  width: 288px;
+  height: 180px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.laboratory__caption{
+  margin: 0 0 20px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000D26;
+}
+
+.laboratory__plates{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.laboratory__plate {
+  width: 140px;
+  min-height: 224px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  color: #001337;
+}
+
+.laboratory__plate_active {
+  background-color: #009FAC;
+  transform: translateY(-10px);
+  color: #fff;
+}
+
+.laboratory__plate-header-container {
+  min-height: 28px;
+  margin: 10px 10px 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.laboratory__plate-header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.06px;
+  margin: 0;
+}
+
+.laboratory__logo-container {
+  width: 40px;
+  height: 40px;
+  margin: 16px auto;
+  border-radius: 50%;
+  box-shadow: 0px 3px 12px rgba(1, 54, 157, 0.15);
+  background-color: #fff;
+}
+
+.laboratory__logo {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+
+.laboratory__content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  margin: 0 10px 16px 10px;
+}
+
+.laboratory__button {
+  margin: 0 10px 10px 10px;
+  width: 120px;
+  height: 32px;
+  background-color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.06px;
+  color: #001337;
+  border: 1px solid #001337;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.laboratory__button_active {
+  color: #009fac;
+  border: none;
+}
 .footer {
   display: grid;
   grid-template-columns: repeat(2,1fr);
