@@ -545,16 +545,11 @@
   opacity: 0.5;
 }
 
-
-
-
-
-
-.form {
+.request {
   background-color: #009fac;
 }
 
-.form__container {
+.request__container {
   max-width: 288px;
   display: grid;
   row-gap: 23px;
@@ -562,7 +557,7 @@
   margin: 0 auto;
 }
 
-.form__title {
+.request__title {
   margin: 0;
   text-align: center;
   font-weight: 600;
@@ -570,16 +565,19 @@
   line-height: 22px;
 }
 
-.form__text {
+.request__text {
   margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
 }
 
-.form__fields {
+.form {
   display: grid;
   row-gap: 12px;
+}
+
+.form_type_request {
   grid-template-areas:
   "name"
   "surname"
@@ -632,6 +630,7 @@
   border: 1px solid #fff;
   border-radius: 5px;
   padding: 0;
+  margin-top: 7px;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
