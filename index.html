@@ -9,29 +9,39 @@
 <body>
   <div class="page">
     <header class="header">
-      <button class="header__burger-button"></button>
-      <img class="header__logo" src="./image/Header/HeaderLogo.png" alt="лого">
-      <nav class="menu menu_style_popup">
-        <div class="logo logo_place_navigation"></div>
-        <ul class="menu__list">
-          <li class="menu__list-item"><a href="#" class="menu__text">О нас</a></li>
-          <li class="menu__list-item"><a href="#" class="menu__text">Лаборатория</a></li>
-          <li class="menu__list-item"><a href="#" class="menu__text">Проекты</a></li>
-          <li class="menu__list-item menu__list-item_type_sublist">
-            <input class="menu__checkbox" id="tab-education" type="checkbox">
-            <label for="tab-education" class="menu__text menu__text_type_label">
-              Образование
-            </label>
-            <ul class="menu__list menu__list_type_education">
-              <li class="menu__list-item menu__list-item_type_education"><a href="#" class="menu__text">Магистратура</a></li>
-              <li class="menu__list-item menu__list-item_type_education"><a href="#" class="menu__text">Аспирантура</a></li>
-            </ul>
-          </li>
-          <li class="menu__list-item"><a href="#" class="menu__text">Публикации</a></li>
-          <li class="menu__list-item"><a href="#" class="menu__text">Команда</a></li>
-          <li class="menu__list-item"><a href="#" class="menu__text">Связаться</a></li>
-        </ul>
-        <button class="closeButton closeButton_menu" type="button" aria-label="Закрыть попап"></button>
+      <div class="header__navigation">
+        <button class="header__burger-button"></button>
+        <img class="header__logo" src="./image/Header/HeaderLogo.png" alt="лого">
+        <nav class="menu menu_style_popup">
+          <div class="logo logo_place_navigation"></div>
+          <ul class="menu__list">
+            <li class="menu__list-item"><a href="#" class="menu__text">О нас</a></li>
+            <li class="menu__list-item"><a href="#" class="menu__text">Лаборатория</a></li>
+            <li class="menu__list-item"><a href="#" class="menu__text">Проекты</a></li>
+            <li class="menu__list-item menu__list-item_type_sublist">
+              <input class="menu__checkbox" id="tab-education" type="checkbox">
+              <label for="tab-education" class="menu__text menu__text_type_label">
+                Образование
+              </label>
+              <ul class="menu__list menu__list_type_education">
+                <li class="menu__list-item menu__list-item_type_education"><a href="#" class="menu__text">Магистратура</a></li>
+                <li class="menu__list-item menu__list-item_type_education"><a href="#" class="menu__text">Аспирантура</a></li>
+              </ul>
+            </li>
+            <li class="menu__list-item"><a href="#" class="menu__text">Публикации</a></li>
+            <li class="menu__list-item"><a href="#" class="menu__text">Команда</a></li>
+            <li class="menu__list-item"><a href="#" class="menu__text">Связаться</a></li>
+          </ul>
+          <button class="closeButton closeButton_menu" type="button" aria-label="Закрыть попап"></button>
+      </div>
+      <div class="header__description">
+        <h1 class="header__header"><b>Когнитивные технологии, </b>машинное обучение</h1>
+        <p class="header__subscription">Системы прикладного искусственного интеллекта</p>
+        <button type="button" class="header__button">
+          <p class="header__button-text">НАШИ ПРОЕКТЫ</p>
+        </button>
+      </div>
+
       </nav>
     </header>
 
