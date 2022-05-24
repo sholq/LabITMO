@@ -150,6 +150,10 @@
   opacity: 0.5;
 }
 
+.description {
+  padding-bottom: 71px;
+}
+
 .description__title {
   text-align: center;
   text-transform: uppercase;
@@ -246,6 +250,24 @@
   padding: 0;
   padding-top: 12px;
   border-top: 1px solid #009fac;
+}
+
+.splide__track {
+  padding-top: 13px;
+}
+
+.splide__pagination {
+  bottom: 2.5em;
+  padding-bottom: 13px;
+}
+
+.splide__pagination__page {
+  height: 4px;
+  width: 4px;
+}
+
+.splide__arrow {
+  visibility: hidden;
 }
 
 .popup {
