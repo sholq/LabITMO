@@ -24,7 +24,10 @@ class Popup {
 
   setEventListeners() {
     this._popup.addEventListener("mousedown", (evt) => {
-      if (evt.target.classList.contains("popup__closer")) {
+      if (evt.target.classList.contains("closeButton")) {
+        this.close();
+      }
+      if (evt.target.classList.contains("popup__opened")) {
         this.close();
       }
     });
@@ -32,11 +35,17 @@ class Popup {
 }
 
 const burgerButton = document.querySelector(".header__burger-button");
+const socialDataAnalyseButton = document.querySelector("#socialDataAnalyseButton");
 
 //создание экземпляра класса и установка слушателей на закрытие
+const socialDataAnalyse = new Popup(".popup_type_laboratory");
+socialDataAnalyse.setEventListeners();
+socialDataAnalyseButton.addEventListener("click", () => {
+  socialDataAnalyse.open();
+})
+
 const burgerPopup = new Popup(".menu");
 burgerPopup.setEventListeners();
-
 burgerButton.addEventListener("click", () => {
   burgerPopup.open();
 });
