@@ -66,6 +66,10 @@
   z-index: 2;
 }
 
+.popup__opened {
+  display: flex;
+}
+
 .logo {
   background-image: url(../image/Logo.svg);
 }

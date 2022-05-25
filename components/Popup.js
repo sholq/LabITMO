@@ -1,6 +1,4 @@
-/*import Popup from "../components/Popup";*/
-
-class Popup {
+export default class Popup {
   constructor(popupSelector) {
     this._popup = document.querySelector(popupSelector);
     this._handleEscClose = this._handleEscClose.bind(this);
@@ -24,28 +22,13 @@ class Popup {
 
   setEventListeners() {
     this._popup.addEventListener("mousedown", (evt) => {
+      //будет работать с попапами ниже,для закрытия попапа по оверлею
+      /*if (evt.target.classList.contains('popup__opened')) {
+                this.close();
+            }*/
       if (evt.target.classList.contains("popup__closer")) {
         this.close();
       }
     });
   }
 }
-
-const burgerButton = document.querySelector(".header__burger-button");
-
-//создание экземпляра класса и установка слушателей на закрытие
-const burgerPopup = new Popup(".menu");
-burgerPopup.setEventListeners();
-
-burgerButton.addEventListener("click", () => {
-  burgerPopup.open();
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  var splide = new Splide(".splide", {
-    type: "loop",
-    padding: "1.5rem",
-    wheel: true,
-  });
-  splide.mount();
-});
