@@ -694,3 +694,57 @@
   font-style: normal;
   color: #FFFFFF;
 }
+
+.projects {
+  background: #001337;
+}
+
+.projects__header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.projects__fieldset {
+  margin: 0 16px;
+  border: none;
+  border-bottom: 2px solid #009FAC;
+  padding: 12px 0 6px 0;
+}
+
+.projects__label {
+  display: block;
+}
+
+.projects__select {
+  border: 0;
+  width: 100%;
+  height: 24px;
+  background: #001337;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.projects__select:focus:active {
+  outline-color: transparent;
+}
+/*
+select.projects__select {
+  background-color: white;
+  color: black;
+  border: 1px solid #bcbcc4;
+}*/
