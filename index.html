@@ -101,14 +101,16 @@
 
       <section class="request">
         <div class="request__container">
-          <h2 class="request__title">ВСЕГДА НА СВЯЗИ</h2>
-          <p class="request__text">По всем интересующим вас вопросам вы всегда можете обратиться по указанным телефонам, написать на почту или оставтиь свое сообщение через форму обратной связи.</p>
+          <div class="request__intro">
+            <h2 class="request__title">ВСЕГДА НА СВЯЗИ</h2>
+            <p class="request__text">По всем интересующим вас вопросам вы всегда можете обратиться по указанным телефонам, написать на почту или оставтиь свое сообщение через форму обратной связи.</p>
+          </div>
           <form class="form form_type_request" name="connect">
-            <input id="name" class="form__input form__input_type_name"  type="text" value="" placeholder="Имя" required>
-            <input id="surname" class="form__input form__input_type_surname"  type="text" value="" placeholder="Фамилия" required>
-            <input id="telephone" class="form__input form__input_type_telephone"  type="tel" value="" placeholder="Телефон" pattern="\+7[0-9]{10}||8[0-9]{10}" required>
-            <input id="email" class="form__input form__input_type_email"  type="email" value="" placeholder="E-mail" required>
-            <textarea id="text" class="form__input form__input_type_message" placeholder="Сообщение" required></textarea>
+            <input name="name" class="form__input form__input_type_name"  type="text" value="" placeholder="Имя" required>
+            <input name="surname" class="form__input form__input_type_surname"  type="text" value="" placeholder="Фамилия" required>
+            <input name="telephone" class="form__input form__input_type_telephone"  type="tel" value="" placeholder="Телефон" pattern="\+7[0-9]{10}||8[0-9]{10}" required>
+            <input name="email" class="form__input form__input_type_email"  type="email" value="" placeholder="E-mail" required>
+            <textarea name="text" class="form__input form__input_type_message" placeholder="Сообщение" required></textarea>
             <button class="form__submitButton" type="submit">ОТПРАВИТЬ</button>
           </form>
         </div>
