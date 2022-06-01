@@ -548,6 +548,100 @@
   opacity: 0.5;
 }
 
+.request {
+  background-color: #009fac;
+}
+
+.request__container {
+  max-width: 288px;
+  display: grid;
+  row-gap: 23px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.request__title {
+  margin: 0;
+  margin-bottom: 23px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.request__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.form {
+  display: grid;
+  row-gap: 12px;
+}
+
+.form_type_request {
+  grid-template-areas:
+  "name"
+  "surname"
+  "telephone"
+  "email"
+  "message";
+}
+
+.form__input {
+  height: 44px;
+  padding: 0;
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.form__input::placeholder {
+  color: #009fac;
+}
+
+.form__input_type_name {
+  grid-area: name;
+}
+
+.form__input_type_surname {
+  grid-area: surname;
+}
+
+.form__input_type_telephone {
+  grid-area: telephone;
+}
+
+.form__input_type_email {
+  grid-area: email;
+}
+
+.form__input_type_message {
+  grid-area: message;
+  height: 144px;
+  padding-top: 13px;
+}
+
+.form__submitButton {
+  max-width: 288px;
+  height: 44px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0;
+  margin-top: 7px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background-color: #009fac;
+}
+
 .partners {
   margin: 0;
   padding: 72px 16px 40px;
